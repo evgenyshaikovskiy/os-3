@@ -4,8 +4,6 @@
 #include <mutex>
 #include <unistd.h>
 
-static std::mutex log_mtx;
-
 void Philosopher::set_left_fork(Fork *left_fork)
 {
   this->left_fork = left_fork;
